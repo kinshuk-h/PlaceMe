@@ -1,0 +1,19 @@
+https://github.com/kinshuk-h/PlaceMe.git
+
+Problem Statement 1
+
+Placement season is just around the corner in Engineering colleges. Every year even
+after the guidance from seniors and alumni, students face a lot of problems in
+preparation and end up not getting placed till the end. So to help the students, the
+Placement Committee of the college has decided to arrange online sessions with the
+alumni.
+
+Task:
+
+Create a Web/android/hybrid app that has the following functionalities but are not limited
+to these :
+1. Set of the frequently asked problems and solutions
+2. Alumni Connect Portal
+3. Problem Discussion Forum
+4. Organize live Session for College Students
+5. Opportunity Updates (On-Campus/Off-Campus Placement Drive, Competitive Exams, etc.)
