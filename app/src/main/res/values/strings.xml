@@ -12,4 +12,11 @@
     <string name="title_settings">Settings</string>
     <string name="title_discuss">Discuss</string>
     <string name="title_alumni">Alumni</string>
+    <string name="drawer_open">Open Drawer</string>
+    <string name="drawer_close">Close Drawer</string>
+    <array name="sort_options">
+        <item>Most Recent</item>
+        <item>Most Popular</item>
+        <item>By Tags</item>
+    </array>
 </resources>

@@ -21,14 +21,14 @@
         app:showAsAction="ifRoom"/>
 
     <item
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_forum"
         android:title="@string/title_discuss"
         android:icon="@drawable/ic_help_black_24dp"
         app:showAsAction="ifRoom"/>
 
     <item
         android:id="@+id/navigation_settings"
-        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:icon="@drawable/ic_settings"
         android:title="@string/title_settings"
         app:showAsAction="ifRoom"/>
 

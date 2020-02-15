@@ -8,7 +8,7 @@
         android:tint="#80000000"
         android:id="@+id/feed_img"
         android:layout_width="match_parent"
-        android:src="@drawable/sampleconference"
+        android:src="@drawable/sample_conference"
         android:layout_height="280dp"
         android:scaleType="fitXY" />
     <TextView

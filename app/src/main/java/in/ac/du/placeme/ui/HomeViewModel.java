@@ -1,4 +1,4 @@
-package in.ac.du.placeme.ui.home;
+package in.ac.du.placeme.ui;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

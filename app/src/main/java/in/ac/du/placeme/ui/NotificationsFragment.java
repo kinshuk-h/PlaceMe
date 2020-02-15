@@ -1,4 +1,4 @@
-package in.ac.du.placeme.ui.notifications;
+package in.ac.du.placeme.ui;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
