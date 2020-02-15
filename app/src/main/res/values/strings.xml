@@ -3,4 +3,8 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="sample_feed_text">Lorem Ipsum dorem sola ti</string>
+    <string name="sample_feed_title">Feed Title</string>
+    <string name="sample_location">Location</string>
+    <string name="sample_creator">Creator</string>
 </resources>

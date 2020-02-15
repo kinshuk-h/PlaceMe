@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width=""
+            android:layout_height=""
+    </LinearLayout>
+    <TextView
+        android:fontFamily="sans-serif-condensed"
+        android:text="Post Title"
+        android:ellipsize="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/title"/>
+    <TextView
+        android:textColor="@c"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Placeholder body for a given question"
+        android:id="@+id/body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:singleLine="false"
+        android:ellipsize="end"
+        android:layout_below="@id/title"/>
+</RelativeLayout>
