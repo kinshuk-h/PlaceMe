@@ -7,4 +7,9 @@
     <string name="sample_feed_title">Feed Title</string>
     <string name="sample_location">Location</string>
     <string name="sample_creator">Creator</string>
+    <string name="settings">Settings</string>
+    <string name="title_jobs">Jobs</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_discuss">Discuss</string>
+    <string name="title_alumni">Alumni</string>
 </resources>

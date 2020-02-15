@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="@android:color/holo_green_dark"
     android:layout_width="match_parent"
-    android:layout_height="280dp">
+    android:layout_height="280dp"
+    android:layout_margin="5dp">
     <ImageView
         android:tint="#80000000"
         android:id="@+id/feed_img"
@@ -41,13 +42,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <ImageButton
-            android:padding="10dp"
+        <Button
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:drawablePadding="10dp"
+            android:backgroundTint="@android:color/transparent"
             android:tint="@android:color/white"
             android:background="@drawable/img_btn_clickable"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_star_inactive"/>
+            android:drawableLeft="@drawable/ic_star_inactive"/>
         <ImageButton
             android:padding="10dp"
             android:tint="@android:color/white"

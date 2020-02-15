@@ -22,4 +22,10 @@
         android:name="in.ac.du.placeme.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/forum"
+        android:name=""
+        android:label="Forum"
+        tools:layout="@layout/fragment_forum"/>
 </navigation>
