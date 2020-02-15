@@ -3,14 +3,36 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content">
     <LinearLayout
+        android:layout_marginEnd="10dp"
+        android:id="@+id/buttonPanel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+        <ImageButton
+            android:background="@drawable/img_btn_clickable"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_upvote"/>
         <TextView
-            android:layout_width=""
-            android:layout_height=""
+            android:text="0"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/votes"/>
+        <ImageButton
+            android:background="@drawable/img_btn_clickable"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_downvote"/>
     </LinearLayout>
     <TextView
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:layout_toEndOf="@id/buttonPanel"
+        android:layout_alignStart="@id/body"
+        android:textColor="@android:color/black"
         android:fontFamily="sans-serif-condensed"
         android:text="Post Title"
         android:ellipsize="end"
@@ -19,10 +41,15 @@
         android:layout_alignParentEnd="true"
         android:id="@+id/title"/>
     <TextView
-        android:textColor="@c"
+        android:layout_marginBottom="10dp"
+        android:layout_alignBottom="@id/buttonPanel"
+        android:padding="5dp"
+        android:layout_toEndOf="@id/buttonPanel"
+        android:textColor="@android:color/black"
         android:fontFamily="sans-serif-condensed-light"
         android:text="Placeholder body for a given question"
         android:id="@+id/body"
+        android:maxLines="2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
