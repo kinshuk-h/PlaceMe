@@ -10,17 +10,20 @@
 
     <item
         android:id="@+id/navigation_jobs"
+        android:icon="@drawable/job_alert_black_24dp"
         android:title="@string/title_jobs"
         app:showAsAction="ifRoom"/>
 
     <item
         android:id="@+id/navigation_alumni"
         android:title="@string/title_alumni"
+        android:icon="@drawable/alumni_icon"
         app:showAsAction="ifRoom"/>
 
     <item
         android:id="@+id/navigation_notifications"
         android:title="@string/title_discuss"
+        android:icon="@drawable/ic_help_black_24dp"
         app:showAsAction="ifRoom"/>
 
     <item

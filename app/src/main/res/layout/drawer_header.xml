@@ -1,8 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="180dp">
     <ImageView
+        android:layout_marginStart="20dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/image"
         android:layout_width="60dp"
-        android:layout_height="60dp"/>
+        android:layout_height="60dp"
+        android:src="@drawable/ic_account_circle_black_24dp" />
+    <LinearLayout
+        android:layout_toEndOf="@id/image"
+        android:layout_marginStart="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+        <TextView
+            android:layout_above="@id/email"
+            android:layout_toEndOf="@id/image"
+            android:textColor="@android:color/black"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="16sp"
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"/>
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@id/name"
+            android:id="@+id/email"
+            android:textColor="@android:color/black"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Address @ Domain"/>
+    </LinearLayout>
 </RelativeLayout>
