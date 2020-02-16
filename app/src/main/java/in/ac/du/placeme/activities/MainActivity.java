@@ -2,6 +2,9 @@ package in.ac.du.placeme.activities;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -22,6 +25,7 @@ import in.ac.du.placeme.ui.HomeFragment;
 import in.ac.du.placeme.ui.JobFragment;
 import in.ac.du.placeme.ui.AlumniFragment;
 import in.ac.du.placeme.ui.ForumFragment;
+import in.ac.du.placeme.ui.ProfileFragment;
 import in.ac.du.placeme.ui.SettingsFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,11 +33,13 @@ public class MainActivity extends AppCompatActivity {
     private NavigationView navView;
     private DrawerLayout layout;
     private Toolbar toolbar;
-    private List<String> headers = Arrays.asList("Home", "Jobs", "Alumni", "Discuss", "Settings");
-    private List<Fragment> fragments = Arrays.asList(new HomeFragment(), new JobFragment(), new AlumniFragment(), new ForumFragment(), new SettingsFragment());
+    private TextView header;
+    private List<String> headers = Arrays.asList("Home", "Jobs", "Alumni", "Discuss", "Settings","My Profile");
+    private List<Fragment> fragments = Arrays.asList(new HomeFragment(), new JobFragment(), new AlumniFragment(), 
+                                                     new ForumFragment(), new SettingsFragment(), new ProfileFragment());
 
     void loadFragment(String title, Fragment fragment) {
-        toolbar.setTitle(title);
+        header.setText(title);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_view, fragment).addToBackStack(title).commit();
     }
 
@@ -42,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         else {
             int lastIndex = getSupportFragmentManager().getBackStackEntryCount()-1;
             FragmentManager.BackStackEntry entry = getSupportFragmentManager().getBackStackEntryAt(lastIndex);
-            toolbar.setTitle(entry.getName()); navView.getMenu().getItem(headers.indexOf(entry.getName())).setChecked(true);
+            header.setText(entry.getName()); navView.getMenu().getItem(headers.indexOf(entry.getName())).setChecked(true);
         }
     }
 
@@ -51,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState); setContentView(R.layout.activity_main);
 
         toolbar = findViewById(R.id.toolbar); setSupportActionBar(toolbar);
+        header = findViewById(R.id.header);
 
         layout = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, layout, toolbar, R.string.drawer_open, R.string.drawer_close);
@@ -68,6 +75,15 @@ public class MainActivity extends AppCompatActivity {
                     default: return false;
                 }
                 layout.closeDrawer(GravityCompat.START); return true;
+            }
+        });
+
+        loadFragment(headers.get(0), fragments.get(0));
+
+        ImageButton profile = findViewById(R.id.profile);
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override public void onClick(View v) {
+                loadFragment(headers.get(5), fragments.get(5));
             }
         });
 
