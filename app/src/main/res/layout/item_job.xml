@@ -6,8 +6,7 @@
         android:id="@+id/company_logo"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:src="@drawable/ic_dashboard_black_24dp"
-        android:tint="@android:color/black"/>
+        android:src="@drawable/ic_dashboard_black_24dp"/>
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="wrap_content"
@@ -24,7 +23,7 @@
             android:textColor="@android:color/black"
             android:text="Job Title - Company"/>
         <TextView
-            android:id="@+id/profile_location"
+            android:id="@+id/job_loc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Location @ DD/MM/YYYY HH:MM"
